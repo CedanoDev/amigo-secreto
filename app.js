@@ -1,10 +1,4 @@
-// El principal objetivo de este desafío es fortalecer tus habilidades en lógica de programación. Aquí deberás desarrollar la lógica para resolver el problema.
 let amigos = [];
-
-/*function agregarAmigo(){
-    let amigo = document.getElementById('amigo');
-    amigos.push(amigo);
-}*/
 
 //Con esta funcion valido que el usuario no entre un dato vacio y
 //si no esta vacio se agrega al arreglo.
@@ -17,13 +11,14 @@ function agregarAmigo(){
     else {
         //Agregar amigo si no esta vacio el input
         amigos.push(amigo);
-        console.log(amigos);
+        //console.log(amigos);
         //Limpiar el input
         limpiarCaja();
     }
     mostrarAmigos(amigos);
 }
 
+//Funcion para limpiar el input
 function limpiarCaja(){
     document.getElementById('amigo').value = '';
 }
@@ -68,4 +63,3 @@ function sortearAmigo() {
     let resultadoElemento = document.getElementById("resultado");
     resultadoElemento.innerHTML = `<li>${amigoSorteado}</li>`;
 }
-
